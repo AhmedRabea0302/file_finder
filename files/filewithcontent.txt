@@ -1,0 +1,7 @@
+package os // import "os"
+
+type FileInfo = fs.FileInfo
+    A FileInfo describes a file and is returned by Stat and Lstat.
+
+func Lstat(name string) (FileInfo, error)
+func Stat(name string) (FileInfo, error)
